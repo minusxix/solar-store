@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Noto Serif;
+    font-size: 16px;
+}
+:root {
+    --text-color: #fff;
+}
+body {
+
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    padding: 30px 3%;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+header.hide {
+    top: -100px;
+}
+header a {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.logo img {
+    width: 80%;
+    height: auto;
+}
+.nav {
+    display: flex;
+}
+.nav a {
+    display: inline-block;
+    margin: 0 30px;
+    transition: all .6s ease;
+}
+.nav a:hover {
+    color: skyblue;
+}
+.login {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.login:hover {
+    background: #fff;
+    color: skyblue;
+}
+.animation {
+    padding: 0 15%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cot 1 phan */
+    gap: 2rem;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.ani-intro h3 {
+    letter-spacing: 1px;
+    color: #fff;
+}
+.ani-intro h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 15px 0;
+    color: #fff;
+}
+.ani-intro p {
+    width: 80%;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #fff;
+}
+.int-button {
+    background: skyblue;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .6s ease;
+    opacity: 0.8;
+}
+.int-button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.ani-image img {
+    width: 90%;
+    height: auto;
+}
+.ani-social {
+    position: fixed;
+    top: 50%;
+    padding: 0 5%;
+    transform: translateY(-50%);
+}
+.ani-social i {
+    display: block;
+    margin: 35px 0;
+    transition: all .6s;
+    color: #fff;
+    font-size: 18px;
+}
+.ani-social i:hover {
+    color: skyblue;
+}
+.about h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about span {
+    font-size: 3rem;
+    color: skyblue;
+}
+.about {
+    width: 100%;
+    height: 100vh;
+    background: #fff1eb;
+    /* position: relative; con absolute de chu trong hinh*/
+    padding: 5%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.ab-image {
+    overflow: hidden;
+}
+.ab-image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+.ab-content {
+    height: 60vh;
+    background: skyblue;
+    opacity: 0.8;
+    border-radius: 0 10px 10px 0;
+}
+.ab-content h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    padding: 10% 30px 5%;
+}
+.ab-content p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: justify;
+    /* gon chu */
+    padding: 0 30px;
+}
+.about .row .ab-image {
+    flex: 1 1 45rem;
+}
+.about .row .ab-content {
+    flex: 1 1 45rem;
+}
+.contact {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: #ace0f9;
+    display: flex;
+    justify-content: center;
+    /* theo flex */
+    align-items: center;
+    /* can theo chieu doc */
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 5%;
+}
+.contact input {
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.contact input::placeholder {
+    color: #fff;
+}
+.con-number, .con-email, .con-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.con-number i, .con-email i, .con-name i {
+    font-size: 1.5rem;
+    margin-right: 3%;
+}
+.con-number input, .con-email input, .con-name input {
+    background: none;
+    font-size: 1.5rem;
+    padding: 3%;
+}
+.con-button {
+    color: #fff;
+    background: transparent;
+    padding: 10px 10px;
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+.con-button:hover {
+    transform: scale(1.1);
+}
+.location {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    width: 100%;
+    height: 40vh;
+    padding: 50px 0 0 0;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    text-align: center;
+}
+.cirle i {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: skyblue;
+    background: #fff;
+    margin: 30px 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.square a {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 30px;
+    padding: 10px;
+    border: 3px solid #fff;
+}
+.credit {
+    margin-top: 50px;
+    color: #fff;
+}
+
