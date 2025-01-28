@@ -101,7 +101,7 @@ header a {
     opacity: 1;
 }
 .ani-image img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 .ani-social {
@@ -271,4 +271,25 @@ footer {
     margin-top: 50px;
     color: #fff;
 }
-
+/* pc */
+@media (min-width: 1024px) {
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+@media (max-width: 740px) {
+    .nav, .ani-intro p, .int-button, .ani-social {
+        display: none;
+    }
+    .animation {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .about {
+        display: none;
+    }
+    .contact {
+        background: #fff1eb;
+    }
+}
