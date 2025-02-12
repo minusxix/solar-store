@@ -16,19 +16,11 @@
             <ul class="nav">
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#kit">Solar Kit</a></li>
+                <li><a href="/#kit">Solar Kit</a></li>
             </ul>
-            <a href="login" class="login">Login</a>
+            <a href="{{route('login')}}" class="login">Login</a>
         </header>
         @yield('content')
-        <section class="kit" id="kit">
-            <!-- $kit -> $slug -->
-            <a href="{{route('kit', ['saver'])}}">Saver</a>
-            <a href="{{route('kit', ['standard'])}}">Standard</a>
-        </section>
-        <section class="location">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2451812502986!2d106.6821949!3d10.7925243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175296da8474273%3A0xa8f272afc828dd5e!2s3B%20Art%20Gallery!5e0!3m2!1svi!2s!4v1736525928880!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
         <footer>
             <div class="cirle">
                 <a href="#"><i class="bx bxs-phone-call"></i></a>
@@ -36,11 +28,11 @@
                 <a href="#"><i class="bx bxl-youtube"></i></a>
             </div>
             <div class="square">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="/">Home</a>
+                <a href="/#about">About</a>
+                <a href="/#contact">Contact</a>
+                <a href="/#location">Location</a>
                 <a href="#">Legal</a>
-                <a href="#">Location</a>
             </div>
             <div class="credit">Created By <span>Min Yoon</span> | 2025</div>
         </footer>
